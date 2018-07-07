@@ -18,3 +18,8 @@
         font-weight: bold;
     }
        
+    .form {
+        border: 1.25px solid lightgray;
+        padding: 5% 3%;
+    }
+    

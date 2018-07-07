@@ -7,15 +7,16 @@
     <title>Employee Data Management</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Bootstrap CDN-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
 
     <!-- Firebase Reference -->
     <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
@@ -39,27 +40,35 @@
 
     </div>
     <!-- Form in middle for employee capture -->
-    <div class="form-container">
-        <h3> Add Employee </h3>
-        <form id="employee-form">
-            <label for="name-input"> Employee Name </label>
-            <input type="text" id="add-name" placeholder="Jane Doe">
-            <br>
 
-            <label for="role-input"> Role </label>
-            <input type="text" id="add-role" placeholder="CEO">
-            <br>
-
-            <label for="date-input"> Start Date (MM/DD/YYY) </label>
-            <input type="text" id="add-date" placeholder="01/08/1989">
-            <br>
-
-            <label for="rate-input"> Monthly Rate </label>
-            <input type="text" id="add-rate" placeholder="200000">
-            <br>
-
-            <input type="submit" id="submitBtn" value="Submit">
-
+    <div class="form">
+        <form>
+            <div class="form-group">
+                <h1>Add Employee</h1>
+                <label for="name">
+                    <h6>Employee Name</h6>
+                </label>
+                <input type="name" class="form-control" id="add-name" placeholder="Jane Doe">
+            </div>
+            <div class="form-group">
+                <label for="role">
+                    <h6>Role</h6>
+                </label>
+                <input type="role" class="form-control" id="add-role" placeholder="CEO">
+            </div>
+            <div class="form-group">
+                <label for="date">
+                    <h6>Start Date (MM/DD/YYYY)</h6>
+                </label>
+                <input type="startdate" class="form-control" id="add-date" placeholder="01/08/1998">
+            </div>
+            <div class="form-group">
+                <label for="rate">
+                    <h6>Monthly Rate</h6>
+                </label>
+                <input type="rate" class="form-control" id="add-rate" placeholder="100000">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
     <!-- div with row/cols for results -->
