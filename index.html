@@ -5,10 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Employee Data Management</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-</head>
-<body>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     
+    <!-- jQuery -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+ <!-- Bootstrap CDN-->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Jumbotron top -->
+    <div class="container">
+
+        <br>
+     
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">Employee Data Management</h1>
+              <h2 class="lead">A Comprehensive Directory of Employee Billable Hours</h2>
+            </div>
+        </div>
+    </div>
+    <!-- Form in middle for employee capture -->
+    <div class= "form-container">
+        <h3> Add Employee </h3>
+            <form id = "employee-form">
+                <label for = "name-input"> Employee Name </label>
+                <input type = "text" id = "add-name" placeholder = "Jane Doe"><br>
+ 
+                <label for = "role-input"> Role </label>
+                <input type = "text" id = "add-role" placeholder = "CEO"><br>
+ 
+                <label for = "date-input"> Start Date (MM/DD/YYY) </label>
+                <input type = "text" id = "add-date" placeholder = "01/08/1989"><br>
+ 
+                <label for = "rate-input"> Monthly Rate </label>
+                <input type = "text" id = "add-rate" placeholder = "200000"><br>
+ 
+                <input type = "submit" id = "submitBtn" value = "Submit">
+ 
+            </form>
+    </div>
+    <!-- div with row/cols for results -->
 </body>
 </html>
